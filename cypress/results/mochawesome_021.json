@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-26T11:45:05.290Z",
+    "end": "2022-09-26T11:45:11.356Z",
+    "duration": 6066,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a42883e5-2dba-4b0e-974f-2192c18e3c97",
+      "title": "",
+      "fullFile": "cypress/integration/CALENDER/calender.spec.js",
+      "file": "cypress/integration/CALENDER/calender.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "df008a60-8631-401e-8083-aa99274316d9",
+          "title": "verify date and year",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test",
+              "fullTitle": "verify date and year test",
+              "timedOut": null,
+              "duration": 2592,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('http://www.webdriveruniversity.com/Datepicker/index.html');\ncy.get('.form-control').should('be.visible').click();\nlet dateToSelect = new Date();\ndateToSelect.setDate(dateToSelect.getDate() + 400);\nlet year = dateToSelect.getFullYear();\nlet day = dateToSelect.getDate();\nlet month = dateToSelect.toLocaleString('default', {\n  month: 'long'\n});\ncy.log(day, month, year);\nfunction SelectMOnthAndDate() {\n  cy.get('.datepicker-switch').first().then(el => {\n    if (!el.text().includes(year)) {\n      cy.get('.next').first().click();\n      SelectMOnthAndDate();\n    }\n  }).then(() => {});\n}",
+              "err": {},
+              "uuid": "041d8960-4e05-489e-a38a-c61a4dc44d88",
+              "parentUUID": "df008a60-8631-401e-8083-aa99274316d9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "041d8960-4e05-489e-a38a-c61a4dc44d88"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 2592,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

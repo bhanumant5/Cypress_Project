@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-26T11:50:56.714Z",
+    "end": "2022-09-26T11:50:57.655Z",
+    "duration": 941,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "0c3ec2f0-dd49-4ff1-9b91-b1c705d2e168",
+      "title": "",
+      "fullFile": "cypress/integration/API_TEST_SPECS/apii.spec.js",
+      "file": "cypress/integration/API_TEST_SPECS/apii.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "9db37f51-9338-4d7f-a058-c87080cc2b5e",
+          "title": "test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test",
+              "fullTitle": "test test",
+              "timedOut": null,
+              "duration": 645,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'GET',\n  url: 'https://reqres.in/api/users?page=2\"'\n}).then(function ({\n  status,\n  headers,\n  duration,\n  body\n}) {\n  cy.log(status); //  expect(status).to.eql(200)\n  //  expect(body).to.have.keys([\"data\",\"page\",\"per_page\",\"support\",\"total\",\"total_pages\"])\n  body.data.forEach(element => {\n    expect(element).to.have.keys([\"id\", \"first_name\", \"last_name\", \"email\", \"avatar\"]);\n    expect(element.first_name).not.to.eql(null);\n    expect(element.last_name).not.to.eql(null);\n    expect(element.email).not.to.eql(null);\n    expect(element.id).not.to.eql(null);\n    expect(element.avatar).not.to.eql(null);\n  });\n});",
+              "err": {},
+              "uuid": "d7e49cda-066c-4804-8e38-8ae8ce475ff4",
+              "parentUUID": "9db37f51-9338-4d7f-a058-c87080cc2b5e",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "d7e49cda-066c-4804-8e38-8ae8ce475ff4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 645,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

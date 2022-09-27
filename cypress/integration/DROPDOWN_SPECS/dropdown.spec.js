@@ -19,7 +19,7 @@ describe('verify Dropdown', function(){
         cy.visit('https://www.screener.in/')
         cy.get('.home-search').type('Gnfc')
         cy.get('.home-search .dropdown-content li').each(function(el){
-            expect(el.text().includes('Gujarat Narmada Valley Fertilizers & Chemicals Ltd'))
+            if(el.text().includes('Gujarat Narmada Valley Fertilizers & Chemicals Ltd'))
                 cy.wrap(el).click()
             
         })

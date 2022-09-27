@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-26T11:50:49.673Z",
+    "end": "2022-09-26T11:50:51.046Z",
+    "duration": 1373,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "f9b90fd7-c0a5-42d6-bd0b-947c3d07a3e8",
+      "title": "",
+      "fullFile": "cypress/integration/API_TEST_SPECS/api4.spec.js",
+      "file": "cypress/integration/API_TEST_SPECS/api4.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8b8f1239-fd63-4d02-9188-8b50b2cfe6c9",
+          "title": "test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test",
+              "fullTitle": "test test",
+              "timedOut": null,
+              "duration": 1292,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.request({\n  method: 'PUT',\n  url: 'https://reqres.in/api/users/2',\n  body: {\n    name: \"Hanumant\",\n    job: \"zion resident\"\n  }\n}).then(function (res) {\n  expect(res.body.name).to.equal('Hanumant');\n});",
+              "err": {},
+              "uuid": "c05c1a59-b24f-4037-8104-52609c0d0be4",
+              "parentUUID": "8b8f1239-fd63-4d02-9188-8b50b2cfe6c9",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "c05c1a59-b24f-4037-8104-52609c0d0be4"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 1292,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

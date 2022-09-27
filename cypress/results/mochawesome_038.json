@@ -1,0 +1,109 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 0,
+    "failures": 1,
+    "start": "2022-09-26T11:53:38.387Z",
+    "end": "2022-09-26T11:54:01.966Z",
+    "duration": 23579,
+    "testsRegistered": 1,
+    "passPercent": 0,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "fd13b1ef-559f-440a-9446-17628829eb8a",
+      "title": "",
+      "fullFile": "cypress/integration/DROPDOWN_SPECS/dropdown.spec.js",
+      "file": "cypress/integration/DROPDOWN_SPECS/dropdown.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "fa332d37-9e80-431e-939c-5b07e5c09650",
+          "title": "verify Dropdown",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test",
+              "fullTitle": "verify Dropdown test",
+              "timedOut": null,
+              "duration": 20165,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://testautomationpractice.blogspot.com/');\ncy.get('table[class=\"inline_grid choices\"]>tbody>tr').check(['Sunday']).check().should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `table[class=\"inline_grid choices\"]>tbody>tr`, but never found it.",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `table[class=\"inline_grid choices\"]>tbody>tr`, but never found it.\n    at Context.eval (https://testautomationpractice.blogspot.com/__cypress/tests?p=cypress\\integration\\DROPDOWN_SPECS\\dropdown.spec.js:150:8)",
+                "diff": null
+              },
+              "uuid": "3ae43c10-4fe1-4ce4-973a-b6a4e646c04d",
+              "parentUUID": "fa332d37-9e80-431e-939c-5b07e5c09650",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "3ae43c10-4fe1-4ce4-973a-b6a4e646c04d"
+          ],
+          "pending": [],
+          "skipped": [],
+          "duration": 20165,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

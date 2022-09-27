@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-09-26T11:54:41.609Z",
+    "end": "2022-09-26T11:55:01.090Z",
+    "duration": 19481,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "afaf605f-b65a-4da1-b188-a77d72093d50",
+      "title": "",
+      "fullFile": "cypress/integration/FIXTURES_SPECS/fixture1.spec.js",
+      "file": "cypress/integration/FIXTURES_SPECS/fixture1.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "c82d9a69-8534-4484-ba92-5f2936aae339",
+          "title": "test",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test",
+              "fullTitle": "test test",
+              "timedOut": null,
+              "duration": 11300,
+              "state": "passed",
+              "speed": "slow",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.fixture('Contactus').then(function (obj) {\n  cy.visit('https://webdriveruniversity.com/Contact-Us/contactus.html');\n  cy.get('input[name=\"first_name\"]').type(obj.firstname);\n  cy.get('input[name=\"last_name\"]').type(obj.lastname);\n  cy.get('input[name=\"email\"]').type(obj.email);\n  cy.get('textarea[name=\"message\"]').type(obj.message);\n  cy.get('.contact_button').eq(1).click();\n  cy.get('h1').should('have.text', 'Thank You for your Message!');\n});",
+              "err": {},
+              "uuid": "aa69dd69-acf8-4dcd-85fc-391c4245209a",
+              "parentUUID": "c82d9a69-8534-4484-ba92-5f2936aae339",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "aa69dd69-acf8-4dcd-85fc-391c4245209a"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 11300,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

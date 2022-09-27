@@ -1,0 +1,105 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 0,
+    "failures": 0,
+    "start": "2022-08-17T16:02:29.159Z",
+    "end": "2022-08-17T16:02:38.191Z",
+    "duration": 9032,
+    "testsRegistered": 1,
+    "passPercent": 100,
+    "pendingPercent": 0,
+    "other": 0,
+    "hasOther": false,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "072de5d0-db00-4307-92e9-f5eed0a30c26",
+      "title": "",
+      "fullFile": "cypress/integration/API_TEST_SPECS/api1.spec.js",
+      "file": "cypress/integration/API_TEST_SPECS/api1.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "8a412181-809c-44a4-bd87-0f19d658bde5",
+          "title": "test1",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "test",
+              "fullTitle": "test1 test",
+              "timedOut": null,
+              "duration": 4316,
+              "state": "passed",
+              "speed": "fast",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.intercept({\n  method: 'GET',\n  url: 'https://jsonplaceholder.cypress.io/comments/1'\n}).as('getComment');\ncy.visit('https://example.cypress.io/commands/network-requests');\ncy.contains('Get Comment').click();\ncy.wait('@getComment');\ncy.get('.network-comment').should('contain', 'laudantium');",
+              "err": {},
+              "uuid": "0e44e037-5b13-4af2-a50d-22d91ad21f67",
+              "parentUUID": "8a412181-809c-44a4-bd87-0f19d658bde5",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "0e44e037-5b13-4af2-a50d-22d91ad21f67"
+          ],
+          "failures": [],
+          "pending": [],
+          "skipped": [],
+          "duration": 4316,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

@@ -1,0 +1,148 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 0,
+    "pending": 2,
+    "failures": -1,
+    "start": "2022-09-26T11:51:51.521Z",
+    "end": "2022-09-26T11:52:08.257Z",
+    "duration": 16736,
+    "testsRegistered": 3,
+    "passPercent": 0,
+    "pendingPercent": 66.66666666666666,
+    "other": 2,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "def0a929-141c-43a1-a803-188327dc1f7c",
+      "title": "",
+      "fullFile": "cypress/integration/DROPDOWN_SPECS/amazon.spec.js",
+      "file": "cypress/integration/DROPDOWN_SPECS/amazon.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "3c17a466-1a22-457c-b7d8-f5e9bd7b8f78",
+          "title": "TS01- Verify the Dynamic Dropdown",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "verify dynamic dropdown ",
+              "fullTitle": "TS01- Verify the Dynamic Dropdown verify dynamic dropdown ",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "4d8fcb32-f24b-43d9-bcf2-22ff0142464e",
+              "parentUUID": "3c17a466-1a22-457c-b7d8-f5e9bd7b8f78",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "TS02- verify Radio Button",
+              "fullTitle": "TS01- Verify the Dynamic Dropdown TS02- verify Radio Button",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "07243c05-48d8-4093-bf90-b824dd5b91e1",
+              "parentUUID": "3c17a466-1a22-457c-b7d8-f5e9bd7b8f78",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "verify static Dropdown",
+              "fullTitle": "TS01- Verify the Dynamic Dropdown verify static Dropdown",
+              "timedOut": null,
+              "duration": 11797,
+              "state": "failed",
+              "speed": null,
+              "pass": false,
+              "fail": true,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.onlinesbi.com/');\ncy.get('.filter-option').eq(2).select().should('be.visible');",
+              "err": {
+                "message": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `2`, but never found it. Queried from element: <span.filter-option.pull-left>",
+                "estack": "AssertionError: Timed out retrying after 4000ms: Expected to find element: `2`, but never found it. Queried from element: <span.filter-option.pull-left>\n    at Context.eval (https://www.onlinesbi.sbi/__cypress/tests?p=cypress\\integration\\DROPDOWN_SPECS\\amazon.spec.js:116:30)",
+                "diff": null
+              },
+              "uuid": "b9fec634-e517-412a-bd89-b167e4d4e1ba",
+              "parentUUID": "3c17a466-1a22-457c-b7d8-f5e9bd7b8f78",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [],
+          "failures": [
+            "b9fec634-e517-412a-bd89-b167e4d4e1ba"
+          ],
+          "pending": [
+            "4d8fcb32-f24b-43d9-bcf2-22ff0142464e",
+            "07243c05-48d8-4093-bf90-b824dd5b91e1"
+          ],
+          "skipped": [],
+          "duration": 11797,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

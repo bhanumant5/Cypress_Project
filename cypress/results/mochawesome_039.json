@@ -1,0 +1,163 @@
+{
+  "stats": {
+    "suites": 1,
+    "tests": 1,
+    "passes": 1,
+    "pending": 3,
+    "failures": -3,
+    "start": "2022-09-26T11:54:13.585Z",
+    "end": "2022-09-26T11:54:22.934Z",
+    "duration": 9349,
+    "testsRegistered": 4,
+    "passPercent": 100,
+    "pendingPercent": 75,
+    "other": 3,
+    "hasOther": true,
+    "skipped": 0,
+    "hasSkipped": false
+  },
+  "results": [
+    {
+      "uuid": "a9363e41-97bf-4dde-8778-962135978691",
+      "title": "",
+      "fullFile": "cypress/integration/DROPDOWN_SPECS/test.spec.js",
+      "file": "cypress/integration/DROPDOWN_SPECS/test.spec.js",
+      "beforeHooks": [],
+      "afterHooks": [],
+      "tests": [],
+      "suites": [
+        {
+          "uuid": "85ddcd3e-3cd5-4084-9e09-22ba5aa44b3d",
+          "title": "verify dynamic dropdown",
+          "fullFile": "",
+          "file": "",
+          "beforeHooks": [],
+          "afterHooks": [],
+          "tests": [
+            {
+              "title": "paytm",
+              "fullTitle": "verify dynamic dropdown paytm",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "6c91a143-69c1-48bc-8fdb-77420d92c43b",
+              "parentUUID": "85ddcd3e-3cd5-4084-9e09-22ba5aa44b3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test",
+              "fullTitle": "verify dynamic dropdown test",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "e8bb7acc-0dbc-4347-b2ec-587bf5a58041",
+              "parentUUID": "85ddcd3e-3cd5-4084-9e09-22ba5aa44b3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test",
+              "fullTitle": "verify dynamic dropdown test",
+              "timedOut": null,
+              "duration": 0,
+              "state": "pending",
+              "speed": null,
+              "pass": false,
+              "fail": false,
+              "pending": true,
+              "context": null,
+              "code": "",
+              "err": {},
+              "uuid": "36194969-e066-4c03-a7da-c5caa281c93c",
+              "parentUUID": "85ddcd3e-3cd5-4084-9e09-22ba5aa44b3d",
+              "isHook": false,
+              "skipped": false
+            },
+            {
+              "title": "test",
+              "fullTitle": "verify dynamic dropdown test",
+              "timedOut": null,
+              "duration": 5215,
+              "state": "passed",
+              "speed": "medium",
+              "pass": true,
+              "fail": false,
+              "pending": false,
+              "context": null,
+              "code": "cy.visit('https://www.screener.in/'); //cy.get('.home-search > .has-addon > .u-full-width')\ncy.get('.home-search > .has-addon > .u-full-width').type('avan');",
+              "err": {},
+              "uuid": "8a83391e-f6e2-437a-833a-4bba436d95a0",
+              "parentUUID": "85ddcd3e-3cd5-4084-9e09-22ba5aa44b3d",
+              "isHook": false,
+              "skipped": false
+            }
+          ],
+          "suites": [],
+          "passes": [
+            "8a83391e-f6e2-437a-833a-4bba436d95a0"
+          ],
+          "failures": [],
+          "pending": [
+            "6c91a143-69c1-48bc-8fdb-77420d92c43b",
+            "e8bb7acc-0dbc-4347-b2ec-587bf5a58041",
+            "36194969-e066-4c03-a7da-c5caa281c93c"
+          ],
+          "skipped": [],
+          "duration": 5215,
+          "root": false,
+          "rootEmpty": false,
+          "_timeout": 2000
+        }
+      ],
+      "passes": [],
+      "failures": [],
+      "pending": [],
+      "skipped": [],
+      "duration": 0,
+      "root": true,
+      "rootEmpty": true,
+      "_timeout": 2000
+    }
+  ],
+  "meta": {
+    "mocha": {
+      "version": "7.0.1"
+    },
+    "mochawesome": {
+      "options": {
+        "quiet": false,
+        "reportFilename": "mochawesome",
+        "saveHtml": false,
+        "saveJson": true,
+        "consoleReporter": "spec",
+        "useInlineDiffs": false,
+        "code": true
+      },
+      "version": "7.1.3"
+    },
+    "marge": {
+      "options": {
+        "reportDir": "cypress/results",
+        "overwrite": false,
+        "html": false,
+        "json": true
+      },
+      "version": "6.2.0"
+    }
+  }
+}

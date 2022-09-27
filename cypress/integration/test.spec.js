@@ -22,7 +22,7 @@ describe('Ts1- Verify the Web Element ', ()=>{
             })
         })
     })
-    it.only('test case 1', function(){
+    it('test case 1', function(){
         cy.visit('https://www.amazon.in/')
         cy.get('#nav-search-bar-form').type('Mobiles')
         cy.get('#nav-search-submit-button').click()

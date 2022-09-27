@@ -21,6 +21,9 @@ cypress run --headless spec="file.spec.js"
 
 
 
+
+
+
 cypress installation
 
 npm init ===========>for package.json
@@ -60,6 +63,7 @@ cy.check()=========radio button and checkbox
 cy.select()============dropdown  //if el.text()=='samsung' condition and eq()
 
 cy.url().should(includes , " ")=========== url verification aseertion 
+cy.url().should('contain', ===)
 
 cy.dblclick()===== doubleclick
 
@@ -91,7 +95,7 @@ cy.on('uncaught:exception', (err, runnable) => {
 
 
 
-    cy.intecept()========wait for getting response===instaed of puttinh hadcote time we use cy.intercepet
+    cy.intecept()========wait for getting response===instaed of putting hardcote time we use cy.intercepet
 
 describe (' verify intercept ', function(){
     it(' interceppt', function(){
@@ -188,8 +192,9 @@ Stubbbing ====> to mock th data
 
 
 api Request  get ==retrive the data==201
-           post== create data==
-           put==update data==
+Get ===Retrive User Data
+           post== create user data==
+           put==update user data==
            delet==delet data==
 
 
