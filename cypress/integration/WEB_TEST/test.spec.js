@@ -27,4 +27,3 @@ describe('test ', function(){
     })
 })
 
-cy.get().type(`{hanumant}`, {parseSpecialCharSequences})
