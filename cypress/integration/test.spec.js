@@ -22,14 +22,14 @@ describe('Ts1- Verify the Web Element ', ()=>{
             })
         })
     })
-    it('test case 1', function(){
-        cy.visit('https://www.amazon.in/')
-        cy.get('#nav-search-bar-form').type('Mobiles')
-        cy.get('#nav-search-submit-button').click()
-        cy.get('span[class="a-list-item"]>a>span').eq(9).then(function(text){
-            cy.wrap(text).check()
-        })
-    })
+    // it('test case 1', function(){
+    //     cy.visit('https://www.amazon.in/')
+    //     cy.get('#nav-search-bar-form').type('Mobiles')
+    //     cy.get('#nav-search-submit-button').click()
+    //     cy.get('span[class="a-list-item"]>a>span').eq(9).then(function(text){
+    //         cy.wrap(text).check()
+    //     })
+    // })
  
 })
 
